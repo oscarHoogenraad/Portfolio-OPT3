@@ -10,47 +10,7 @@ public class Menu {
         printWeergave();
         while(!finish) {
             System.out.println("\nTerug naar menu? Typ 0.");
-        Scanner scanner  = new Scanner(System.in);
-        int choice = scanner.nextInt();
-            switch (choice) {
-                case 0:
-                    printWeergave();
-                    break;
 
-                case 1:
-                    a.accountAanmaken();
-                    break;
-
-                case 2:
-                    c.checkLogin();
-                    break;
-
-                case 3:
-                    if(c.getInlogSi()){
-                        a.accountLoop();
-                    }
-                    else{
-                        System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
-                    }
-                    break;
-
-                case 4:
-                    if(c.getInlogSi()){
-                        b.addRecept();
-                        b.receptLoop();
-                    }
-                    else{
-                        System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
-                    }
-
-                case 5:
-                    if(c.getInlogSi()){
-
-                    }
-                    else{
-                        System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
-                    }
-            }
         }
     }
 

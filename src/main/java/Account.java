@@ -16,7 +16,7 @@ public class Account {
         return accountList;
     }
 
-    public static ArrayList<Account>accountList = new ArrayList<>();
+    public static ArrayList<Account>accountList = new ArrayList<Account>();
 
 
     public String getPassWord() {
