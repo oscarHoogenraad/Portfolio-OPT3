@@ -13,26 +13,10 @@ public class ReceptBeschrijvingenSub extends ReceptBeschrijvingen {
         System.out.println("Over welk recept wilt u meer weten? Typ het nummer");
         int besChoice = scanner.nextInt();
         switch(besChoice){
-            case 1 -> beschrijving1();
-            case 2  -> beschrijving2();
-            case 3 -> beschrijving3();
-            case 4 -> beschrijving4();
-            case 5 -> beschrijving5();
-            case 6 -> beschrijving6();
-            case 7 -> beschrijving7();
-            case 8 -> beschrijving8();
-            case 9 -> beschrijving9();
-            case 10 -> beschrijving10();
-            case 11 -> beschrijving11();
-            case 12 -> beschrijving12();
-            case 13 -> beschrijving13();
-            case 14 -> beschrijving14();
-            case 15 -> beschrijving15();
-            case 16 -> beschrijving16();
-            case 17 -> beschrijving17();
-            case 18 -> beschrijving18();
-            case 19 -> beschrijving19();
-            case 20 -> beschrijving20();
+            case 1 -> beschrijving1();case 2  -> beschrijving2();case 3 -> beschrijving3();case 4 -> beschrijving4();case 5 -> beschrijving5();
+            case 6 -> beschrijving6();case 7 -> beschrijving7();case 8 -> beschrijving8();case 9 -> beschrijving9();case 10 -> beschrijving10();
+            case 11 -> beschrijving11();case 12 -> beschrijving12();case 13 -> beschrijving13();case 14 -> beschrijving14();case 15 -> beschrijving15();
+            case 16 -> beschrijving16();case 17 -> beschrijving17();case 18 -> beschrijving18();case 19 -> beschrijving19();case 20 -> beschrijving20();
         }
     }
 
