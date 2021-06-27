@@ -36,6 +36,7 @@ public class ReceptBeschrijvingenSub extends ReceptBeschrijvingen {
         }
     }
 
+
     @Override
     void beschrijving1() {
         System.out.println("Lisinopril verlaagt de bloeddruk en verbetert de pompkracht van het hart.\n" +
