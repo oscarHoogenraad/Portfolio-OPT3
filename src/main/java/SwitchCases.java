@@ -5,13 +5,14 @@ public class SwitchCases {
     Login c = new Login("", "");
     Account a = new Account("", "");
     Recepten b = new Recepten("a", 1, 1);
+    ReceptBeschrijvingenSub f = new ReceptBeschrijvingenSub("", 1, 1);
 
 
-    public void switchCases(int choice){
+    public void switchCaseMenu(int choice){
         Scanner scanner = new Scanner(System.in);
         switch(choice) {
             case 0 -> switch0();
-            case 1 -> switch1();
+            case 1  -> switch1();
             case 2 -> switch2();
             case 3 -> switch3();
             case 4 -> switch4();
@@ -55,7 +56,7 @@ public class SwitchCases {
 
     public void switch5(){
         if(c.getInlogSi()){
-
+            f.beschrijving();
         }
         else{
             System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
