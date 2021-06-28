@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Psychiater {
 
@@ -17,6 +18,11 @@ public class Psychiater {
 
     private String pNaam;
     private int pNummer;
+
+    public static ArrayList<Psychiater> getPsychiaterList() {
+        return psychiaterList;
+    }
+
     public static ArrayList<Psychiater> psychiaterList = new ArrayList<Psychiater>();
 
     public void addPsychiater(){
@@ -42,6 +48,18 @@ public class Psychiater {
         String printPNaam = "";
         printPNaam+= "Nummer: " + getpNummer() + ", Naam: " + getpNaam();
         return printPNaam;
+    }
+
+    public void pKiezen(){
+        Scanner scanner = new Scanner(System.in);
+        psychiaterLoop();
+        System.out.println("Welke psychiater moet voor u de aanvraag verwerken? Typ het nummer:");
+        int tempPsych = scanner.nextInt();
+        for (Psychiater i: getPsychiaterList()){
+            if(tempPsych == i.getpNummer()){
+                System.out.println("Psychiater: " + i.getpNaam() + " gaat het recept voor u uitschrijven bij uw volgende aanvraag.");
+            }
+        }
     }
 
 }

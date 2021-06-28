@@ -71,11 +71,21 @@ public class SwitchCases {
     }
 
     public void switch6(){
+        if(c.getInlogSi()){
 
+        }
+        else{
+            System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
+        }
     }
 
     public void switch7(){
-
+        if(c.getInlogSi()){
+            RegelsReceptAanvraag.Regels();
+        }
+        else{
+            System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
+        }
     }
 
     public void switch8(){
@@ -97,7 +107,12 @@ public class SwitchCases {
     }
 
     public void switch10(){
-
+        if(c.getInlogSi()){
+            g.pKiezen();
+        }
+        else{
+            System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
+        }
     }
 
     public void switch11(){
