@@ -5,8 +5,14 @@ public class SwitchCases {
     Login c = new Login("", "");
     Account a = new Account("", "");
     Recepten b = new Recepten("a", 1, 1);
-    ReceptBeschrijvingenSub f = new ReceptBeschrijvingenSub("", 1, 1);
+    ReceptBeschrijvingen f = new ReceptBeschrijvingen("", 1, 1);
+    Psychiater g = new Psychiater("", 1);
+    PsychiaterBeschrijvingen h =new PsychiaterBeschrijvingen();
 
+    public void addArrays(){
+        g.addPsychiater();
+        b.addRecept();
+    }
 
     public void switchCaseMenu(int choice){
         Scanner scanner = new Scanner(System.in);
@@ -21,6 +27,8 @@ public class SwitchCases {
             case 7 -> switch7();
             case 8 -> switch8();
             case 9 -> switch9();
+            case 10 -> switch10();
+            case 11 -> switch11();
         }
     }
     public void switch0(){
@@ -46,7 +54,6 @@ public class SwitchCases {
 
     public void switch4(){
         if(c.getInlogSi()){
-            b.addRecept();
             b.receptLoop();
         }
         else{
@@ -72,10 +79,28 @@ public class SwitchCases {
     }
 
     public void switch8(){
-
+        if(c.getInlogSi()){
+            g.psychiaterLoop();
+        }
+        else{
+            System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
+        }
     }
 
     public void switch9(){
+        if(c.getInlogSi()){
+            h.beschrijving();
+        }
+        else{
+            System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
+        }
+    }
+
+    public void switch10(){
+
+    }
+
+    public void switch11(){
         Menu.finish=true;
     }
 }

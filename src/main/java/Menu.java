@@ -19,6 +19,7 @@ public class Menu {
         System.out.println("\nMaak een keuze door het cijfer in te typen van opdracht die u wilt uitvoeren." +
                 "\nMenu:\n1. Nieuwe account aanmaken\n2. Inloggen\n3. Lijst van alle gebruikers\n4. Lijst van alle recepten\n" +
                 "5. Beschrijving van alle recepten\n6. " +
-                "Regels bij het aanvragen van een recept\n7. Recept aanvragen\n8. Lijst van psychiaters\n9. Programma stoppen");
+                "Regels bij het aanvragen van een recept\n7. Recept aanvragen\n8. Lijst van psychiaters\n9. Beschrijving per" +
+                " psychiater\n10. Psychiater kiezen\n11. Programma stoppen");
     }
 }
