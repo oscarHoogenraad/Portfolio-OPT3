@@ -9,6 +9,10 @@ public class Recepten {
 
     }
 
+    public static ArrayList<Recepten> getReceptList() {
+        return receptList;
+    }
+
     public static ArrayList<Recepten> receptList = new ArrayList<Recepten>();
     private String recept;
     private int receptNr;

@@ -8,6 +8,7 @@ public class SwitchCases {
     ReceptBeschrijvingen f = new ReceptBeschrijvingen("", 1, 1);
     Psychiater g = new Psychiater("", 1);
     PsychiaterBeschrijvingen h =new PsychiaterBeschrijvingen();
+    ReceptAanvraag i = new ReceptAanvraag("", 1, 1);
 
     public void addArrays(){
         g.addPsychiater();
@@ -72,7 +73,7 @@ public class SwitchCases {
 
     public void switch6(){
         if(c.getInlogSi()){
-
+            RegelsReceptAanvraag.Regels();
         }
         else{
             System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");
@@ -81,7 +82,7 @@ public class SwitchCases {
 
     public void switch7(){
         if(c.getInlogSi()){
-            RegelsReceptAanvraag.Regels();
+            i.aanvraag();
         }
         else{
             System.out.println("U kunt deze functie niet gebruiken als u niet bent ingelogd. Log in als u deze functie wilt gebruiken.");

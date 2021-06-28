@@ -19,6 +19,12 @@ public class Psychiater {
     private String pNaam;
     private int pNummer;
 
+    public boolean getMagReceptAanvragen() {
+        return magReceptAanvragen;
+    }
+
+    private static boolean magReceptAanvragen = false;
+
     public static ArrayList<Psychiater> getPsychiaterList() {
         return psychiaterList;
     }
@@ -50,7 +56,7 @@ public class Psychiater {
         return printPNaam;
     }
 
-    public void pKiezen(){
+    public Boolean pKiezen(){
         Scanner scanner = new Scanner(System.in);
         psychiaterLoop();
         System.out.println("Welke psychiater moet voor u de aanvraag verwerken? Typ het nummer:");
@@ -58,8 +64,14 @@ public class Psychiater {
         for (Psychiater i: getPsychiaterList()){
             if(tempPsych == i.getpNummer()){
                 System.out.println("Psychiater: " + i.getpNaam() + " gaat het recept voor u uitschrijven bij uw volgende aanvraag.");
+
+                return magReceptAanvragen = true;
             }
         }
+        return magReceptAanvragen;
     }
+
+
+
 
 }
