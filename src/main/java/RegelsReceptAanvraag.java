@@ -1,4 +1,5 @@
 public class RegelsReceptAanvraag {
+    Recepten regelt;
     public static void Regels(){
         System.out.println("1. Niet meer recept aanvragen dan nodig is. \n2. Aangeven waarom u een nieuwe dosis van een recept nodig heeft." +
                 "\n3. Het recept moet aangevraagd worden bij de door u gekozen psychiater.\n4. Een recept aanvragen die in onze database staat.\n5." +

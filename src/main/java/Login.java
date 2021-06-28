@@ -1,9 +1,12 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Login extends Account {
     public Login(String userName, String passWord) {
         super(userName, passWord);
     }
+
+    private static ArrayList<RegelsReceptAanvraag> zorgtVoor;
 
     public boolean getInlogSi() {
         return inlogSi;

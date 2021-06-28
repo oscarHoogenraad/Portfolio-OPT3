@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
 public class ReceptBeschrijvingen extends Beschrijvingen {
-    public ReceptBeschrijvingen(String recept, int receptNr, double pricePerGram) {
-        super();
-    }
 
     public void beschrijving(){
         Recepten a = new Recepten("", 1, 1);

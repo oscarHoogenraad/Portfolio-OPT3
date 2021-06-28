@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
 public class SwitchCases {
+
+    Menu helps;
+
     Menu d = new Menu();
     Login c = new Login("", "");
     Account a = new Account("", "");
     Recepten b = new Recepten("a", 1, 1);
-    ReceptBeschrijvingen f = new ReceptBeschrijvingen("", 1, 1);
+    ReceptBeschrijvingen f = new ReceptBeschrijvingen();
     Psychiater g = new Psychiater("", 1);
     PsychiaterBeschrijvingen h =new PsychiaterBeschrijvingen();
     ReceptAanvraag i = new ReceptAanvraag("", 1, 1);

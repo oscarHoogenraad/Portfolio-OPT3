@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Psychiater {
 
+    private static ArrayList <Recepten> gebruikt;
+
     public Psychiater(String pNaam, int pNummer){
         this.pNaam = pNaam;
         this.pNummer = pNummer;
@@ -56,7 +58,7 @@ public class Psychiater {
         return printPNaam;
     }
 
-    public Boolean pKiezen(){
+    public boolean pKiezen(){
         Scanner scanner = new Scanner(System.in);
         psychiaterLoop();
         System.out.println("Welke psychiater moet voor u de aanvraag verwerken? Typ het nummer:");

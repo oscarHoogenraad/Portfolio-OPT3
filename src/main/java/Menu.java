@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Menu {
+
+    Psychiater gebruikt;
     public static boolean finish = false;
 
     public static void optieLijst(){

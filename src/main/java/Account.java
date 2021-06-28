@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Account {
 
+    private static ArrayList <PsychiaterBeschrijvingen> gebruikt;
+
     public Account(String userName, String passWord){
         this.userName = userName;
         this.passWord = passWord;
