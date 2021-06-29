@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ReceptBeschrijvingen extends Beschrijvingen {
 
     public void beschrijving(){
-        Recepten a = new Recepten("", 1, 1);
+        Recepten a = new Recepten("", 1, 1, true);
         Scanner scanner = new Scanner(System.in);
         a.receptLoop();
         System.out.println("Over welk recept wilt u meer weten? Typ het nummer");

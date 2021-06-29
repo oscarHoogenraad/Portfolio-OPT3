@@ -7,11 +7,11 @@ public class SwitchCases {
     Menu d = new Menu();
     Login c = new Login("", "");
     Account a = new Account("", "");
-    Recepten b = new Recepten("a", 1, 1);
+    Recepten b = new Recepten("a", 1, 1, true);
     ReceptBeschrijvingen f = new ReceptBeschrijvingen();
     Psychiater g = new Psychiater("", 1);
     PsychiaterBeschrijvingen h =new PsychiaterBeschrijvingen();
-    ReceptAanvraag i = new ReceptAanvraag("", 1, 1);
+    ReceptAanvraag i = new ReceptAanvraag("", 1, 1, true);
 
     public void addArrays(){
         g.addPsychiater();
